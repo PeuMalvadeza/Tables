@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas by Peu</title>
+    <style>
+        body{
+            background-color: rgb(252, 242, 242);
+        }
+
+        table {
+            width: 800px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td {
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 7px;
+            border-radius: 15px;
+        }
+
+        .btn1:hover {
+            background-color: white;  
+            color:rgba(125, 224, 241, 0.822) ;
+        }
+
+
+        .btn2:hover {
+            background-color: white;  
+            color:rgba(5, 106, 124, 0.822) ;
+        } 
+
+        .btn3:hover {
+            background-color: white;  
+            color:violet ;
+        } 
+
+        .btn1 {
+            background-color: rgba(125, 224, 241, 0.822);
+            color: white;
+        }
+
+        .btn2 {
+            background-color: rgba(5, 106, 124, 0.822);
+            color: white;
+        }
+        
+        .btn3 {
+            background-color: violet;
+            color: white;
+        }
+
+        .preco1 {
+            background-color: rgba(125, 224, 241, 0.822);
+        }
+        
+        .preco2 {
+            background-color: rgba(5, 106, 124, 0.822);
+        }
+
+        .preco3 {
+            background-color: violet;
+        }
+        .trgray {
+            background-color: rgb(160, 156, 156);
+        }
+        .btn4 {
+            color: white;
+            background-color: rgb(240, 39, 39);
+            border-radius: 5%;
+        }
+        .btn5 {
+            color: white;
+            background-color: rgb(240, 39, 39);
+            border-radius: 5%;
+        }
+        .btn6 {
+            color: white;
+            background-color: rgb(240, 39, 39);
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table border="1"> 
+       <tr> 
+            <th>Nome</th>
+            <th colspan="2">Telefones</th>
+    </tr>  
+    <tr> 
+        <td>Ted</td>
+        <td>8888-8888</td>
+        <td>9999-9999</td>
+    </tr>  
+    <tr>
+        <td>Junior</td>
+        <td>1111-1111</td>
+        <td>2222-2222</td>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Primeiro Nome:</th>
+            <td>Ted</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefones:</th>
+            <td>8888-8888</td>
+        </tr>
+        <tr>
+            <td>9999-999</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>&nbsp;</th>
+            <th>BÁSICO</th>
+            <th>PADRÃO</th>
+            <th>AVANÇADO</th>
+        </tr>
+        <tr>
+            <th>Preço Mensal</th>
+            <td class="preco1"><b>$29</td>   
+            <td class="preco2"><b>$59</td>
+            <td class="preco3"><b>$139</td> 
+        </tr>
+        <tr>
+            <th>Usuarios ilimitados somente<br>leitura</th>
+            <td>5 contatos por cliente</td>
+            <td>25 contatos por cliente</td>
+            <td>Contatos ilimitados</td>
+        </tr>
+        <tr>
+            <th>Comercial</th>
+            <td>1.000 visualizações de email</td>
+            <td>2.000 visualizações de email</td>
+            <td>visualizações de email personalizadas</td>
+        </tr>
+        <tr>
+            <th>Café</th>
+            <td>5 xícaras</td>
+            <td>8 xícaras</td>
+            <td>10 xícaras</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button class="btn1"> ESCOLHA O PLANO</button></td>
+                <td><button class="btn2"> ESCOLHA O PLANO</button></td>
+                <td><button class="btn3"> ESCOLHA O PLANO</button></td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>&nbsp;</th>
+            <th>Basic Price <h5>Lorem ipsum dolor sit amet</h5></th>
+            <th>Standart Price <h5>Lorem ipsum dolor sit amet</h5></th>
+            <th>Advanced Price <h5>Lorem ipsum dolor sit amet</h5></th>
+        </tr>
+        <tr>
+            <th>Preço Mensal</th>
+            <td><b>$29</td>   
+            <td><b>$59</td>
+            <td><B>$139</td> 
+        </tr>
+        <tr class="trgray">
+            <td>Recursos</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>Armazenamento</th>
+            <td>1Gb</td>
+            <td>10Gb</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Pessoas</th>
+            <td>2 pessoas</td>
+            <td>20 pessoas</td>
+            <td>Ilimitado</td>
+        </tr>
+        <tr>
+            <th>Análise de fraude</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>Suporte 24/7</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>Consulta</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button class="btn4"> ESCOLHA O PLANO</button></td>
+                <td><button class="btn5"> ESCOLHA O PLANO</button></td>
+                <td><button class="btn6"> ESCOLHA O PLANO</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
